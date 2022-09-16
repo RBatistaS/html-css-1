@@ -5,19 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+
+    <!-- no caso de colocarmos uma largura ou altura pré definida no documento html quando utilizamos o css as configurações de largura e altura que estarão em valor serão as do css -->
+    <style>
+        iframe {
+            width:600px;
+            height:600px;
+            border: 1px solid black;
+        }
+    </style>
+
 </head>
 <body>
     <h1>Testandoo uso de  um iframe </h1>
     <p>
         Acessando o site do 
-        <iframe src="https://www.cursoemvideo.com/" frameborder="0"></iframe> 
+        <iframe src="https://www.cursoemvideo.com/" frameborder="0" width="400" height="500px" scrolling="no"></iframe> 
         
        para aprender a programar
     </p>
     <p>
-        aqui podemos ver que alguns sites como o do google possui proteção para não ser utilizados por iframe em sites de terceiros
-        <iframe src="https://www.google.com.br/"></iframe>
+        repositório do gustavo guanabara
+        <iframe src="https://gustavoguanabara.github.io/" height="500px" width="300px" > no <a href="https://gustavoguanabara.github.io/" target="_blank"></a>GitHub</iframe>
     </p>
+   
     
 </body>
 </html>
