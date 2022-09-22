@@ -23,8 +23,10 @@
 
     <!-- para algumas linguens e para o html e importante queconste o (name )exemplo php e o propio html para outras linguagrens como javascrip utiçlizamosmais o id="" -->
 
-    <form action="cadastro.php" autocomplete="off">
-        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"> </p><br>
+    <!-- no html temos dois tipos de metodos de envio de formulario esses são os metodos (  get(metodo padrão esse mostra os dados do usuario na barra de tarefas nao e indicado para formularios com envios senciveis tipo fotos senhas dados de catão e o medtodo get e limitado a 3000 bits ) e post(no metodo poste os dados são escondidos na barra de tarefas mais ainda será mostrado no devtools) ) -->
+
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome" > </p><br>
         <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"> </p><br>
         <input type="submit" value="enviar">
     </form>
